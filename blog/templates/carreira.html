@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profissional</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header> 
+        {% for aluno in descricao %}
+            <nav class="nome"> {{aluno.nome}} </nav>
+            <nav class="menu">
+                <a href="">Página Inicial</a>
+                <a href="">Minha Carreira Profissional</a>
+            </nav>
+        {% endfor %}
+    </header>
+
+    <main>
+        <h2>Sobre mim</h2>
+        <div class="descricao">
+            <ul>
+                {% for aluno in descricao %}
+                <h3>Descrição</h3>
+                <p>{{ aluno.descricao }}</p>
+                
+                <h3>Idade</h2>
+                <p>{{ aluno.idade }}</p>
+                <h3>Email</h3>
+
+                <p>{{ aluno.email }}</p>
+
+                <h3>Cidade</h3>
+                <p>{{ aluno.cidade }}</p>
+
+                <h3>Estado</h3>
+                <p>{{ aluno.estado }}</p>
+
+                <h3>Campus</h3>
+                <p>{{ aluno.campus }}</p>
+
+                <h3>Cuso</h3>
+                <p>{{ aluno.curso }}</p>
+
+                <h3>Série</h3>
+                <p>{{ aluno.serie }}</p>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="foto">
+            <img src="/blog/static/imagens/images.jpeg" alt="" width="40px"></img>
+        </div>
+    </main>
+        
+    <footer>
+        <div class="mens_blog">
+            Minha Carreira Profissional
+        </div>
+    </footer>
+</body>
+</html>

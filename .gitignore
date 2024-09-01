@@ -1,0 +1,12 @@
+*/migrations/
+
+settings_local.py
+local_settings.py
+
+*.sqlite3
+
+__pycache__/
+*.pyc
+
+venv/
+env/

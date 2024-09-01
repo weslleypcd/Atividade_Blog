@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: #f4f4f4;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    color: #4CAF50;
+    font-weight: bolder;
+}
+
+header .nome{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header .menu a{
+    color: green;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 1em;
+}
+
+main h3{
+    color: #333;
+}
+
+main .foto{
+    display: flex;
+    margin: 1em 0;
+    width: 100px;
+}
+
+main .descricao{
+    display: flex;
+}
+
+main .foto img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-weight: bolder;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profissional</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header> 
+        {% for aluno in nome %}
+            <nav class="nome"> {{aluno.nome}}</nav>
+        {% endfor %}
+            <nav class="menu">
+                <a href="http://127.0.0.1:8000/index">Página Inicial</a>
+                <a href="http://127.0.0.1:8000/carreira/">Minha Carreira Profissional</a>
+            </nav>
+    </header>
+
+    <main>
+        {% for aluno in nome %}
+            <h3>{{ aluno.nome }}</h3>
+                <div class="foto"><img src="{{ aluno.foto.url }}" alt=""> </div>
+        {% endfor %}
+
+    </main>
+
+    <footer>
+        <div class="mens_blog">
+            Seja Bem-Vindo ao Meu Blog Profissional
+        </div>
+    </footer>
+</body>
+</html>
